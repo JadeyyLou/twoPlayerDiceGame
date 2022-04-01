@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>2 Player game</title>
+</head>
+<body class = animatedGradient>
+	<body>
+		<div id="navbar">
+			<button class = "navBtn"><a href="index.html">Home</a></button>
+			<button class = "navBtn"><a href="1player.html">1 Player</a></button>
+			<button class = "navBtn"><a href="2player.html">2 player</a></button>
+			</div>
+
+	
+
+		<header class = "header"> 
+			<h2>2 Player</h2>
+			<p class="rules">The first player to reach a score of 20 wins</p>
+			<p class="rules">However.... roll a 1 and the other player wins</p>
+			
+		</header>
+	<div id = twoPlayerGame>
+			<div id= "playerOne">
+			<div class="pOneScoreContainer">	Player 1 score: <span id = "playerOneScore">...</span></div>
+				<img id="dieOne" src="dice/1.png" alt="dice">	
+	
+					<button id="p1">Roll</button>
+					<button id="pass1">Hold</button>
+			</div>
+
+	
+			<div id ="playerTwo">
+			<div class="pTwoScoreContainer">	Player 2 score: <span id = "playerTwoScore">...</span></div>
+				<img  id = "dieTwo" src = "dice/2.png" alt="dice">
+	
+					<button id="p2">Roll</button>
+					<button id="pass2">Hold</button>
+		   </div>
+	
+		   <div id = winnerText>...</div>
+	
+	</div>
+	<button id ="restartBtn">Restart</button>
+	<script src="2player.js"></script>
+</body>
+</html>

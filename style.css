@@ -1,0 +1,319 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.animatedGradient {
+	animation: animateBg 15s linear infinite;
+	background-image: linear-gradient(90deg,#bd4faf,#5794db,#45b9e1,#e63b7a,#bd4faf,#5794db);
+	background-size: 500% 100%;;
+	background-size: 700% 100%;
+  }
+ 
+@keyframes animateBg {
+	0% { background-position: 0% 0%; }
+	100% { background-position: 100% 0%; }
+  }
+  /* Navbar--------------------------- */
+
+  #navbar{
+	position:absolute;
+	top:0;
+	/* background-color: white; */
+	width: 100%;
+	height:5%;
+	display:flex;
+	justify-content:space-around;
+	align-items: center;
+  }
+  .navBtn{
+	  background-color: rgb(255, 255, 255,0.6);
+	  border: none;
+	  padding:5px;
+	  width:20%;
+	  border-radius:5px
+
+  }
+
+/* Welcome page ---------------------- */
+#welcomePage{
+	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;	
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content:space-around;
+	align-items: center;
+	width:50%;
+	height:50%;
+	background-color: rgb(255, 255, 255,0.2);
+	border: 5px double white;
+	border-radius:10px;
+}
+#text{
+    font-size: 55px;
+	color:white;
+	font-weight: bold;
+}
+#text2{
+	font-size: 30px;
+	color:white;
+}
+
+#buttons{
+	display: flex;
+	width: 100%;
+	height: 20%;
+	flex-direction: column;
+	justify-content:space-around;
+	align-items: center;
+	/* border: 2px solid black; */
+}
+#onePlayer,
+#twoPlayer{
+	border:none;
+	background-color:rgb(255, 255, 255, 0.6);
+	border-radius:5px;
+	max-width:100%;
+	max-height: 100%;
+	height:30%;
+	width:50%;
+}
+a{
+	text-decoration: none;
+	color:black;
+	font-size:15px;
+	font-weight:bold;
+	cursor: pointer;
+}
+ a:hover{
+	color: darkgrey;
+}
+
+  
+/* 1 player---------------------------------*/
+body{
+	height:100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+}
+
+h2{
+	
+	display: inline;
+	/* border: 1px solid blue; */
+	width: 100%;
+	color:white;
+	font-size: 80px;
+}
+.rules{
+	margin-top:30px;
+	font-size: 20px;
+}
+
+.header{
+	margin:10px;
+	/* border: 3px solid green; */
+	text-align: center;
+	width:100%;
+	height:auto;
+	padding-bottom: 50px;
+	font-size: 100%;
+	font-weight: 700;
+	color:white;
+}
+#twoPlayerGame{
+	/* border: 1px solid red; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:80%;
+	margin-bottom:70px;
+}
+#playerOne{
+	border: 5px double white;
+	border-radius:10px;
+	padding:30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px;
+}
+#playerTwo{
+	border: 5px double white;
+	border-radius:10px;
+	padding:30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px;
+}
+.image{
+	max-width: 100%;
+	max-height:100%;
+	width:200px;
+	height:200px;
+	background-color:rgb(253, 147, 255);
+	border-radius: 15%;
+	margin:10%;
+}
+.pOneScoreContainer,
+.pTwoScoreContainer{
+	border: 1px solid rgb(255, 255, 255);
+	background-color: rgb(255, 255, 255,0.5);
+	padding: 10px;
+	border-radius:5px;
+	width: 100%;
+}
+
+
+#p1,
+#p2{
+	border:none;
+	max-height: 100%;
+	max-width:100%;
+	width:100px;
+	height:30px;
+	border-radius:10px;
+	background-color: white;
+	font-size:15px;
+	font-weight:bold;
+	margin:5px;
+}
+#p1:hover{
+	color:darkgrey
+}
+#p2:hover{
+	color:darkgrey;
+}
+
+#pass1,
+#pass2{
+	border:none;
+	max-height: 100%;
+	max-width:100%;
+	width:100px;
+	height:30px;
+	border-radius:10px;
+	background-color: white;
+	font-size:15px;
+	font-weight:bold;
+	margin:5px;
+}
+#pass1:hover{
+	color:palevioletred;
+}
+#pass2:hover{
+	color:palevioletred;
+}
+
+#restartBtn{
+	border:none;
+	max-height:100%;
+	max-width:100%;
+	width:150px;
+	height:40px;
+	border-radius:10px;
+	background-color:rgb(247, 192, 255);
+	font-size:17px;
+	font-weight: bold;
+} 
+/* animated winner and loser pages---------- */
+#winnerText{
+	position:absolute;
+	top:40%;
+	width:100%;
+	text-align:center;
+	width:100%;
+	height:10%;
+	background-color:rgba (0,0,0,0.5);
+	z-index: 2;
+	font-size:100px;
+	animation:pulse 2s infinite;
+}
+@keyframes pulse {
+	0%{
+		color: blue;
+	}
+	50%{
+		color:rgb(0, 195, 255);
+	}
+	100%{
+		color:#bd4faf;
+	}
+}
+
+
+  /* phone settings for one player-------------------------------------- */
+
+
+  @media all and (max-width:1000px){
+	  .flex-nav * {
+		  width:50%;
+		  height:auto;
+	  }
+	  #winnerText{
+		  font-size: 400%;
+		  width:90%;
+		  background-color:rgb(255, 255, 255,0.8);
+		  border-radius:5px;
+	  }
+	  #loserText{
+		  font-size:550%;
+	  }
+	  #game{
+		  width:85%;
+		  height:auto;
+		  padding:8px;
+	  }
+	  .image{
+		  width:50%;
+		  height:auto;
+		  margin:10px;
+	  }
+  }
+
+  @media all and (max-width:500px){
+	  .flex-nav * {
+		  width:50%;
+		  height:auto;
+	  }
+	  #winnerText{
+		  font-size:200% ;
+		  width:90%;
+		  background-color:rgb(255, 255, 255,0.8);
+		  border-radius:5px;
+	  }
+	  #loserText{
+		  font-size: 350%;
+	  }
+	  #game{
+		  width:80%;
+		  height:auto;
+		  padding:6px;
+	  }
+	  .image{
+		  width:50%;
+		  height:auto;
+		  margin:10px;
+	  }
+	}
+
+/* --------------------------------------------------- */
+
+#dieOne,
+#dieTwo{
+	max-width: 100%;
+	max-height:100%;
+	width:200px;
+	height:200px;
+	background-color:rgb(253, 147, 255);
+	border-radius: 15%;
+	margin:10%;
+}
+
+
+
